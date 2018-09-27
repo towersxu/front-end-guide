@@ -4,16 +4,14 @@
   "description": "前端技术收集📚",
   "main": "index.js",
   "scripts": {
-    "upgrade": "yarn-upgrade-all && cp node_modules/mermaid/dist/mermaid.min.js content/scripts/",
-    "predev": "cd content; gitbook install",
+    "postinstall": "cd content; gitbook install",
     "dev": "gitbook serve ./content",
     "build": "gitbook build ./content"
   },
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "mermaid": "^8.0.0-rc.6",
-    "standard": "^11.0.1",
-    "yarn-upgrade-all": "^0.3.0"
+    "standard": "^11.0.1"
   },
   "author": "",
   "license": "ISC"
