@@ -1,13 +1,13 @@
 # Summary
 
 * [开始](README.md)
-* [编程语言](1_languages/README.md)
-  * [HTML](1_languages/html.md)
-  * [html5知识点](1_languages/html5.md)
-  * [css知识点](1_languages/css.md)
-  * [css3知识点](1_languages/css3.md)
-  * [javascript知识点](1_languages/javascript.md)
-    * [es6知识点](1_languages/es6.md)
+* 编程语言
+  * [html](1_languages/html.md)
+  * [html5](1_languages/html5.md)
+  * [css](1_languages/css.md)
+  * [css3](1_languages/css3.md)
+  * [javascript](1_languages/javascript.md)
+  * [es6](1_languages/es6.md)
 * [前端库/框架](2_framework/README.md)
   * [vue](2_framework/vue.md)
 * [前端工程化](3_engineering/README.md)
