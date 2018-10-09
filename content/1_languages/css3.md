@@ -12,11 +12,11 @@ first-child, last-child, nth-child, nth-last-child
 - [att^=val]:如果元素用att表示的属性，其属性值的**开头**是val指定的字符的话，则该元素使用这个样式。
 - [att$=val]:如果元素用att表示的属性，其属性值的**结尾**是val指定的字符的话，则该元素使用这个样式。
 
-**伪元素选择器**，对css伪元素使用的选择器,。
+**伪元素选择器**，对css伪元素使用的选择器。
 
-E:before, E:after, E:first-line, E:first-letter
+:before, :after, :first-line, :first-letter
 
-UI元素状态伪类选择器
+**状态伪类选择器**, 一般是UI元素的状态。
 
 :hover, :active, :focus, :enabled, :disabled, :checked, :selection等
 
@@ -41,4 +41,5 @@ UI元素状态伪类选择器
 ### 动画
 
 [CSS3 动画](http://www.w3school.com.cn/css3/css3_animation.asp)
+
 [理解CSS3 transform中的Matrix(矩阵)](https://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/)
