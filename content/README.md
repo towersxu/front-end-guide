@@ -12,4 +12,4 @@
 
 ![image](./images/all-xmind.png)
 
-[前端工程师必备技能.xmind](./files/前端工程师必备技能.xmind)
+[前端工程师必备技能.xmind](http://fe.lezhixing.com.cn/guide/files/前端工程师必备技能.xmind)

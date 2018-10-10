@@ -45,5 +45,5 @@ sessionStorage特点
 
 [HTML 5 教程](http://www.w3school.com.cn/html5/index.asp)
 
-[HTML5权威指南.pdf](../files/HTML5.pdf)
+[HTML5权威指南.pdf](http://fe.lezhixing.com.cn/guide/files/HTML5.pdf)
 
