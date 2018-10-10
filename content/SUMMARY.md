@@ -8,9 +8,14 @@
   * [css3](1_languages/css3.md)
   * [javascript](1_languages/javascript.md)
   * [es6](1_languages/es6.md)
-* [前端库/框架](2_framework/README.md)
+* [前端库/框架]
   * [vue](2_framework/vue.md)
-* [前端工程化](3_engineering/README.md)
+  * [jquery](2_framework/jquery.md)
+  * [lodash](2_framework/lodash.md)
+* [前端工程化]
+  * [nodejs前端开发环境](3_engineering/nodejs.md)
+  * [babel](3_engineering/babel.md)
+  * [eslint](3_engineering/eslint.md)
 * [H5应用](4_h5/README.md)
 * [编程知识](5_programing/README.md)
 * [可视化](6_visualization/README.md)
