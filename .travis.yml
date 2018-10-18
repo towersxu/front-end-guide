@@ -12,6 +12,10 @@ before_install:
 before_deploy:
   - tar czvf book_html.tar.gz content/_book/
 
+jobs:
+  include:
+    script: npm run build
+
 deploy:
   provider: pages
   skip-cleanup: true
