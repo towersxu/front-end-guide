@@ -10,7 +10,7 @@ before_install:
   - gitbook fetch 3.2.3
 
 before_deploy:
-  - tar czvf book_html.tar.gz content/_book/
+  - cp -R ./content/_book ./docs/
 
 jobs:
   include:
@@ -19,7 +19,7 @@ jobs:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 88005b5972c8b473acef2f6174acfe382c93ee90  # Set in the settings page of your repository, as a secure variable
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
     branch: master
