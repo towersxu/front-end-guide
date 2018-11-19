@@ -43,3 +43,7 @@ first-child, last-child, nth-child, nth-last-child
 [CSS3 动画](http://www.w3school.com.cn/css3/css3_animation.asp)
 
 [理解CSS3 transform中的Matrix(矩阵)](https://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/)
+
+## 扩展阅读
+
+[谈谈一些有趣的 CSS 话题](https://github.com/chokcoco/iCSS)
