@@ -18,6 +18,7 @@
   * [eslint](3_engineering/eslint.md)
 * [H5应用](4_h5/README.md)
 * [编程知识](5_programing/README.md)
+  * [算法](5_programing/algorithm.md)
 * [可视化](6_visualization/README.md)
 * [前端常用工具](7_tools/README.md)
 * [性能优化](8_performance/README.md)
