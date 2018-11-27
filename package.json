@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "mermaid": "^8.0.0-rc.6",
+    "request": "^2.88.0",
     "standard": "^11.0.1"
   },
   "author": "",

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Image:</p>
+<img id="myImage" width="220" src="./image.jpg" alt="myImage">
+<div id="rotate"></div>
+<p>Canvas:</p>
+<!-- <canvas id="myCanvas" width="240" height="297" style="border:1px solid #d3d3d3;"> -->
+Your browser does not support the HTML5 canvas tag.
+</canvas>
+<script>
+
+  window.onload = function () {
+    var c = document.createElement('canvas');
+    // var img = document.getElementById("myImage");
+    var image = new Image()
+    image.onload = function () {
+      //canvas must be squared and take the bigger size width or height
+      var img = this
+      // var c = 
+      var cnvsSize;
+      if (img.width > img.height) {
+        cnvsSize = img.width;
+        isHorizontal = true;
+      }
+      else {
+        cnvsSize = img.height;
+        isHorizontal = false;
+      }
+      c.width = cnvsSize;
+      c.height = cnvsSize;
+
+      var ctx = c.getContext("2d");
+      ctx.clearRect(0, 0, c.width, c.height);
+
+      //go to the center of the canvas and rotate
+      ctx.translate(c.width / 2, c.height / 2);
+      ctx.rotate(180 * Math.PI / 180);
+
+      //default x and y to draw
+      var Y = -cnvsSize / 2;
+      var X = -cnvsSize / 2;
+
+      //calculate the x and y for the image to be drawn
+      if (isHorizontal) {
+        Y = (- img.height) / 2;
+      }
+      else {
+        X = (- img.width) / 2;
+      }
+
+      ctx.drawImage(img, X, Y);
+
+      //a temporary squared image
+      var imgSquared = new Image();
+    
+      //take the data of the squared image
+      // imgSquared.src = c.toDataURL("image/jpg");
+      var i = c.toDataURL("image/jpg");
+      document.getElementById('rotate').innerHTML = '<img width="220" src="' + i + '">'
+
+      // imgSquared.onload = function () {
+
+      //   //resize the canvas to the oposite to the original image
+      //   c.width = img.height;
+      //   c.height = img.width;
+
+      //   //source is my squared image
+      //   if (isHorizontal) {
+      //     var sourceX = (cnvsSize - c.width) / 2;
+      //     var sourceY = 0;
+      //   }
+      //   else {
+      //     var sourceX = 0;
+      //     var sourceY = (cnvsSize - c.height) / 2;
+      //   }
+
+      //   var sourceWidth = c.width;
+      //   var sourceHeight = c.height;
+
+      //   //destination is canvas resized
+      //   var destX = 0;
+      //   var destY = 0;
+      //   var destWidth = c.width;
+      //   var destHeight = c.height;
+
+      //   ctx.clearRect(0, 0, c.width, c.height);
+
+      //   ctx.drawImage(imgSquared, sourceX, sourceY, sourceWidth, sourceHeight, destX, destY, destWidth, destHeight);
+
+      //   imgSquared = null;
+      //   var i = c.toDataURL('image/png', 1)
+      //   document.getElementById('rotate').innerHTML = '<img width="277" src="' + i +'">'
+      // };
+    }
+    image.src = './image.jpg'
+  }
+</script>
+</body>
+</html>
