@@ -47,30 +47,8 @@ var times = [
 //   '2018-11-19 15:10,2018-11-19 15:11'
 // ]
 
-var timestamps = times.map(function (t) {
-  return t.split(',').map(function (t1) {
-    return new Date(t1).getTime()
-  })
-})
-
-function hasCross (t) {
-  for (let i = 0; i < t.length; i++) {
-    for (let j = i + 1; j < t.length; j++) {
-      if (j !== i && isTimeInRange(t[i], t[j])) {
-        return true
-      }
-    }
-  }
-  return false
-}
-
-function isTimeInRange(t1, t2) {
-  if ((t2[0] < t1[0] && t1[0] < t2[1]) || (t2[0] < t1[1] && t1[1] < t2[1])) {
-    console.log(new Date(t1[0]).toString(), new Date(t1[1]).toString())
-    console.log(new Date(t2[0]).toString(), new Date(t2[1]).toString())
-    return true
-  }
-  return false
+function hasCross () {
+  // todo:
 }
 
 var result = hasCross(timestamps)

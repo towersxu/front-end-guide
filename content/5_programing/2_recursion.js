@@ -57,18 +57,9 @@ var xiaoMingFamily = {
   nameLength: 11
 }
 
-function getMaxLength (obj, nameLength) {
-  if (obj.nameLength > nameLength) {
-    nameLength = obj.nameLength
-  }
-  if (obj.father) {
-    nameLength = getMaxLength(obj.father, nameLength)
-  }
-  if (obj.mother) {
-    nameLength = getMaxLength(obj.mother, nameLength)
-  }
-  return nameLength
+function getMaxLength () {
+  // todo:
 }
 
-var max = getMaxLength(xiaoMingFamily, 0)
+var max = getMaxLength()
 console.log(max)

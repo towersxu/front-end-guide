@@ -16,15 +16,7 @@
 let request = require('request')
 
 function ajax (url) {
-  return new Promise((resolve, reject) => {
-    request(url, function (error, response, body) {
-      if (error) {
-        reject(error)
-      } else {
-        resolve(body)
-      }
-    })
-  })
+  // todo:
 }
 
 ajax('http://ux.lezhixing.com.cn/mock/8/fe/who')
