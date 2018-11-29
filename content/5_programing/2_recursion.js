@@ -58,8 +58,20 @@ var xiaoMingFamily = {
 }
 
 function getMaxLength () {
-  // todo:
+  return Math.max.apply(null, Length);
 }
-
+let Length = [];
+function getLength (obj) {
+    if(obj.nameLength){
+      if(obj.father){
+        getLength(obj.father);
+      }
+      if(obj.mother){
+        getLength(obj.mother);
+      }
+      Length.push(obj.nameLength);
+    }
+}
+getLength(xiaoMingFamily);
 var max = getMaxLength()
 console.log(max)
