@@ -2,6 +2,8 @@
  * 日程有一个设置时间段功能，要求用户可以在任何时间请假，但是要求这些时间段不能重复。
  * 例如用户设置了10:00~11:00, 13:00~14:00,15:00~15:30,15:30~16:30
  * 判断下面的时间段是否合法
+ * 
+ * node content/5_programing/1_timejudge.js
  */
 
 var times = [
@@ -17,6 +19,9 @@ var times = [
   '2018-11-19 19:10,2018-11-19 20:10',
   '2018-11-19 15:10,2018-11-19 15:11'
 ]
+
+
+
 
 // var times = [
 //   '2018-11-19 03:10,2018-11-19 04:10',
@@ -47,9 +52,9 @@ var times = [
 //   '2018-11-19 15:10,2018-11-19 15:11'
 // ]
 
-function hasCross () {
+function hasCross() {
   // todo:
 }
 
-var result = hasCross(timestamps)
-console.log(result)
+var result = hasCross(times)
+console.log(result) // true of false

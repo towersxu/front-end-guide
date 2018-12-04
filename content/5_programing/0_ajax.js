@@ -15,14 +15,17 @@
 
 let request = require('request')
 
-function ajax (url) {
+async function ajax (url, callback) {
   // todo:
+  setTimeout(() => {
+    callback()
+  }, 1000)
 }
 
-ajax('http://ux.lezhixing.com.cn/mock/8/fe/who')
-  .then((res) => {
-    console.log(res)
-  })
-  .catch(e => {
-    console.log(e)
-  })
+await ajax('http://ux.lezhixing.com.cn/mock/8/fe/who')
+  // .then((res) => {
+  //   console.log(res)
+  // })
+  // .catch(e => {
+  //   console.log(e)
+  // })

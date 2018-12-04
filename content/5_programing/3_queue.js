@@ -33,9 +33,29 @@ function upload (e) {
     }, 2000)
   })
 }
-
-function addUpload() {
+let queue = []
+let isDoing = false
+// es6 generator
+function addUpload(x, y, z) {
   // todo:
+  queue.push(x)
+  queue.push(y)
+  queue.push(z)
+  if (!isDoing) {
+    doUpload()
+  }
+  function doUpload () {
+    isDoing = true
+    // 读取queu里面的最后一个，做upload
+    var t = queue.shift()
+    if (t) {
+      upload(t).then(() => {
+        doUpload()
+      })
+    } else {
+      isDoing = false
+    }
+  }
 }
 
 let i = 0
