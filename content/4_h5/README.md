@@ -10,3 +10,6 @@ IOS自动全屏的问题
 [https://stackoverflow.com/questions/3699552/html5-inline-video-on-iphone-vs-ipad-browser](https://stackoverflow.com/questions/3699552/html5-inline-video-on-iphone-vs-ipad-browser)
 
 小米和VIVO无法播放mp4的问题，要求视频返回的content-Dispositon: inline, HTTP状态码为206
+
+`content-Dispostion: inline` 与`content-Dispostion:attchment`， 在接口返回视频资源的时候，如果想要浏览器上直接播放，可以设置content-Dispostion: inline。如果不想直接播放，而是下载，则设置content-Dispotion: attchment。
+[MDN Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition)
